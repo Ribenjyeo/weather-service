@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  weather-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: weather-service:1.0
+    container_name: weather-service-container
+    ports:
+      - "8081:8081"
+    environment:
+      WEATHERAPI_API_KEY: fa7272b33d17491d963115513241606
+      YANDEX_WEATHER_API_KEY: 17ae5c9b-06f1-4ef3-b62a-84801ea86589
+      YANDEX_GEOCODE_API_KEY: 8e2ed8b0-8ca2-45c5-ba89-26d9d72f28bd
+      WEATHER_PROVIDER_SOURCE: all

@@ -1,0 +1,30 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: weather-service-deployment
+  labels:
+    app: weather-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: weather-service
+  template:
+    metadata:
+      labels:
+        app: weather-service
+    spec:
+      containers:
+        - name: weather-service
+          image: ribenjyeo/weather-service:1.0
+          ports:
+            - containerPort: 8081
+          env:
+            - name: WEATHERAPI_API_KEY
+              value: "fa7272b33d17491d963115513241606"  # API ключ для WeatherAPI
+            - name: YANDEX_WEATHER_API_KEY
+              value: "17ae5c9b-06f1-4ef3-b62a-84801ea86589"  # API ключ для Yandex Weather
+            - name: YANDEX_GEOCODE_API_KEY
+              value: "8e2ed8b0-8ca2-45c5-ba89-26d9d72f28bd"  # API ключ для Yandex Geocode
+            - name: WEATHER_PROVIDER_SOURCE # Вызываемый сервис
+              value: "all"

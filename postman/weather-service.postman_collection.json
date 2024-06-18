@@ -1,0 +1,202 @@
+{
+  "info": {
+    "_postman_id": "aa07063c-18d3-41d9-8c95-76ab0fcf2940",
+    "name": "weather-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36346752"
+  },
+  "item": [
+    {
+      "name": "weekly",
+      "item": [
+        {
+          "name": "all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/weekly",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "weekly"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "all",
+                  "disabled": true
+                },
+                {
+                  "key": "city",
+                  "value": "Москва",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "yandex",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/weekly?source=yandex&city=Лондон",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "weekly"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "yandex"
+                },
+                {
+                  "key": "city",
+                  "value": "Лондон"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "weatherapi",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/weekly?source=weatherapi&city=Санкт-Петербург",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "weekly"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "weatherapi"
+                },
+                {
+                  "key": "city",
+                  "value": "Санкт-Петербург"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "current",
+      "item": [
+        {
+          "name": "all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/current?source=all&city=Дубай",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "current"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "all"
+                },
+                {
+                  "key": "city",
+                  "value": "Дубай"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "yandex",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/current?source=yandex&city=Краснодар",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "current"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "yandex"
+                },
+                {
+                  "key": "city",
+                  "value": "Краснодар"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "weatherapi",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/weather/weekly?source=weatherapi&city=Шри-Ланка",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "weather",
+                "weekly"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "weatherapi"
+                },
+                {
+                  "key": "city",
+                  "value": "Шри-Ланка"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
