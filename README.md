@@ -13,7 +13,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your_username/weather-service.git
+   git clone https://github.com/ribenjyeo/weather-service.git
    cd weather-service
 
 2. Соберите проект с помощью Gradle:
