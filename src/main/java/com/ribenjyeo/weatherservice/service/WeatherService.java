@@ -5,7 +5,6 @@ import com.ribenjyeo.weatherservice.exception.CoordinatesExtractionException;
 import com.ribenjyeo.weatherservice.exception.UnsupportedSourceException;
 import com.ribenjyeo.weatherservice.model.Coordinates;
 import com.ribenjyeo.weatherservice.model.weather.WeatherData;
-import com.ribenjyeo.weatherservice.service.impl.WeatherProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

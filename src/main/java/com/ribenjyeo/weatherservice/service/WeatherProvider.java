@@ -1,4 +1,4 @@
-package com.ribenjyeo.weatherservice.service.impl;
+package com.ribenjyeo.weatherservice.service;
 
 import com.ribenjyeo.weatherservice.model.Coordinates;
 import com.ribenjyeo.weatherservice.model.weather.WeatherData;
